@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Teams API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header-container"><h1>F1 Teams API</h1>
+    <img src="f1.jfif" alt="Logo F1" class="logo"></div>
+  
+  <div id="result-container">
+    
+    <div id="teamInfo">
+      <p><strong>ID:</strong> <span id="teamId2"></span></p>
+      <p><strong>Equipo:</strong> <span id="teamEquipo"></span></p>
+      <p><strong>Driver 1:</strong> <span id="teamDriver1"></span></p>
+      <p><strong>Driver 2:</strong> <span id="teamDriver2"></span></p>
+      <p><strong>Carro:</strong> <span id="teamCarro"></span></p>
+      <p><strong>Puntos:</strong> <span id="teamPuntos"></span></p>
+      <p><strong>Campeonato Constructores:</strong> <span id="teamCampeonatoConstructores"></span></p>
+      <p><strong>Clasificación:</strong> <span id="teamClasificacion"></span></p>
+    </div>
+  </div>
+
+  <div id="input-container">
+    <label for="teamId">ID del equipo:</label>
+    <input type="text" id="teamId">
+
+    <label for="teamName">Nombre del equipo:</label>
+    <input type="text" id="teamName">
+
+    <label for="driver1">Driver 1:</label>
+    <input type="text" id="driver1">
+
+    <label for="driver2">Driver 2:</label>
+    <input type="text" id="driver2">
+
+    <label for="car">Carro:</label>
+    <input type="text" id="car">
+
+    <label for="points">Puntos:</label>
+    <input type="text" id="points">
+
+    <label for="wc">Campeonato Constructores::</label>
+    <input type="text" id="wc">
+
+    <label for="clasification">Clasificación::</label>
+    <input type="text" id="clasification">
+  </div>
+    <button id="getTeam">GET Equipo</button>
+    <button id="getAllTeams">GET Todos los Equipos</button>
+    <button id="createTeam">POST Nuevo Equipo</button>
+    <button id="updateTeam">PATCH Actualizar Equipo</button>
+    <button id="deleteTeam">DELETE Equipo</button>
+  
+    <textarea id="teamInfo2"  rows="10" cols="50">
+      Equipos de F1
+    </textarea>
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
